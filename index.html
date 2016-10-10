@@ -97,6 +97,23 @@
 			        });
 			    });
 			</script>
+			<script>
+			var map = {80: false, 76: false, 65: false, 89: false};
+				$(document).keydown(function(e) {
+				    if (e.keyCode in map) {
+				        map[e.keyCode] = true;
+				        if (map[80] && map[76] && map[65]&&map[89]) {
+				           alert("Congratulations! You found my easter egg!");
+				           alert("Make sure you have the latest version of Adobe Flash installed and have fun!");
+				           window.open("game.html");
+				        }
+				    }
+				}).keyup(function(e) {
+				    if (e.keyCode in map) {
+				        map[e.keyCode] = false;
+				    }
+				});
+			</script>
 			<script src="assets/js/starfield.js"></script>
 	</body>
 </html>
