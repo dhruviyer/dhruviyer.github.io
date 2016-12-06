@@ -16,11 +16,47 @@
 				alert('Please do not tap on the glass!');
 			} 
 		</script>
+		<script src="countUp.js"></script>
 	</head>
 	<body>
 		<div id="wrapper">
 			<header id="header">
-					<strong><h1>For quick reference, you can download a copy of my <a href="fact_sheet.pdf">fact sheet</a>, an abridged version of my CV. <a href="Résumé.pdf">Click here</a> for a copy of my full CV. For additional information, including coursework, you may <a href="mailto:iyer.dhruv99@gmail.com">email me</a>. Alternatively, you may also admire this lovely picture of a whale waving hello!</h1></strong><br><br><br> <img src="whale.gif" onclick="warning()">
+
+					<strong>
+					<h1>Stats</h1>
+					<br>
+					<table border="1">
+						<tr>
+						<td><h1>SAT</h1></td>
+						<td><h1>ACT</h1></td>
+						<td><h1>GPA</h1></td>
+						</tr>
+						<tr>
+						<td><h2 id='sat'>1,590</h2></td>
+						<td><h2 id='act'>35</h2></td>
+						<td><h2 id='gpa'>4.88</h2></td>
+						</tr>
+						</table>
+					
+					<script>
+					window.onload = function() {
+						var options = {
+							  useEasing : true, 
+							  useGrouping : true, 
+							  separator : ',', 
+							  decimal : '.', 
+							  prefix : '', 
+							  suffix : '' 
+						};
+						counter = new CountUp('sat',0,1590,0,2.5,options);
+						counter2 = new CountUp('act',0,35,0,2.5,options);
+						counter3 = new CountUp('gpa',0,4.88,2,2.5,options);
+						counter.start();
+						counter2.start();
+						counter3.start();
+					}
+					</script>
+					<br><br><h2>For quick reference, you can download a copy of my <a href="fact_sheet.pdf">fact sheet</a>, an abridged version of my CV. <a href="Résumé.pdf">Click here</a> for a copy of my full CV. For additional information, including coursework, you may <a href="mailto:iyer.dhruv99@gmail.com">email me</a>. Alternatively, you may also admire this lovely picture of a whale waving hello!</h2></strong><br><br><br> <img src="whale.gif" onclick="warning()">
 					
 			</header>
 		</div>
