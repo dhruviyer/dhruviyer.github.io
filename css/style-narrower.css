@@ -256,13 +256,14 @@
 
 	#banner {
 		text-align: center;
-		color: #fff;
+		color: #838383;
 		padding: 0em 1em;
 		margin-bottom: 6em;
 	}
 
 		#banner p {
 			font-size: 1.1em;
+			color: #838383;
 			line-height: 1.75em;
 		}
 
