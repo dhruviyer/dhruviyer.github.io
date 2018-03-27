@@ -448,11 +448,46 @@
 		color: #FFF !important;
 	}
 
+	.buttonblue {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-o-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: background-color 0.35s ease-in-out;
+		-webkit-transition: background-color 0.35s ease-in-out;
+		-o-transition: background-color 0.35s ease-in-out;
+		-ms-transition: background-color 0.35s ease-in-out;
+		transition: background-color 0.35s ease-in-out;
+		background: #011f5b;
+		border-radius: 6px;
+		border: 0;
+		color: white;
+		cursor: pointer;
+		display: inline-block;
+		padding: 0.75em 1.5em;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		display: inline-block;
+		font-size: 1.2em;
+		font-weight: 600;
+		color: #FFF !important;
+	}
+
+
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
 			background: #D60000;
+		}
+
+		input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		input[type="button"]:hover,
+		.buttonblue:hover {
+			background: #033FB8;
 		}
 
 		input[type="submit"].alt,
@@ -482,6 +517,14 @@
 		input[type="button"].medium,
 		.button.medium {
 			padding: 0.80em 2em;
+			font-size: 1.6em;
+		}
+
+		input[type="submit"].medium,
+		input[type="reset"].medium,
+		input[type="button"].medium,
+		.buttonblue.medium {
+			padding: 0.80em 1.6em;
 			font-size: 1.6em;
 		}
 
