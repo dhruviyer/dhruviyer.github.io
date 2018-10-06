@@ -199,6 +199,7 @@
 	.image {
 		border: 0;
 		position: relative;
+		border-radius: 0px 0px 9px 9px;
 	}
 
 		.image.fit {
@@ -690,11 +691,15 @@
 
 #niceshadow{
         box-shadow: 0 0 0px #888888;
+        	border-radius: 9px 9px 9px 9px;
         transition: box-shadow 0.25s ease-in-out;
 }
 
+
+
 #niceshadow:hover{
             box-shadow: 0 0 35px #888888;
+                	border-radius: 9px 9px 9px 9px;
         transition: box-shadow 0.25s ease-in-out;
 }
 .box p{
