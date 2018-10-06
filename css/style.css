@@ -220,7 +220,7 @@
 			.image.feature img {
 				display: block;
 				width: 100%;
-
+                
 			}
 
 		.image.featured {
@@ -232,6 +232,9 @@
 			.image.featured img {
 				display: block;
 				width: 100%;
+                border-radius: 9px 9px 0px 0px;
+                
+
 			}
 
 /* Icon */
@@ -680,8 +683,20 @@
 		padding: 3em 2em;
 		background: #646464;
 		text-align: center;
-		border-radius: 0px 0px 6px 6px;
+		border-radius: 0px 0px 9px 9px;
+    
 	}
+
+
+#niceshadow{
+        box-shadow: 0 0 0px #888888;
+        transition: box-shadow 0.25s ease-in-out;
+}
+
+#niceshadow:hover{
+            box-shadow: 0 0 35px #888888;
+        transition: box-shadow 0.25s ease-in-out;
+}
 .box p{
     color: #FFF
 }
