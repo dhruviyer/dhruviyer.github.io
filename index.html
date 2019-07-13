@@ -1,111 +1,105 @@
-<!DOCTYPE HTML>
-<!--
-	Phase Shift by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+<!doctype html>
+
 <html>
 	<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Dhruv Iyer</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.dropotron.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-layers.min.js"></script>
-		<script src="js/init.js"></script>
-		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-wide.css" />
-		</noscript>
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-	
         <style>
-		/* This only works with JavaScript, 
-		   if it's not present, don't show loader */
-		.no-js #loader { display: none;  }
-		.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-	   </style>
-	   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-	
-	
-	<script src="https://github.com/Modernizr/Modernizr/raw/master/modernizr.js"></script>
-	<script>
-		// Wait for window load
-		$(window).load(function() {
-			// Animate loader off screen
-			$("#loader").animate({
-				top: -200
-			}, 1500);
-		});
-	</script>	
-    </head>
+            .container {
+                width:50%; 
+                margin: auto;
+                text-align: center;
+                
+            }
+
+            .column {
+              float: left;
+              width: 50%;
+            }
+
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            @media screen and (max-width: 900px) {
+              .column {
+                width: 100%;
+              }
+            }
+        </style>
+	</head>
 	<body>
+        <div class="container">
+            <h1>Hi!</h1>
+            <p>I am a third-year student in the <a href="https://fisher.wharton.upenn.edu/">Jerome Fisher Program in Management and Technology</a> at the University of Pennsylvania, where I am pursuing dual degrees in Computer Science and Business Analytics.</p>
+            <p>I'm also the founder of <a href="http://www.midasnet.co/">Midas</a>.</p>
+            <div class="row">
+              <div class="column">
+                <h2>Work Experience</h2>
+                  <ul style="text-align: left">
+                    <li>Founder at <a href="http://www.midasnet.co/">Midas</a></li>
+                    <li>Backend Engineering at <a href="https://www.livongo.com/">Livongo</a></li>
+                    <li>Machine Learning at <a href="https://www.intel.com/content/www/us/en/homepage.html">Intel</a></li>
+                    <li>Deep Learning at <a href="https://www.seas.upenn.edu/~eeaton/">GRASP Lab</a></li>
+                    <li>Teaching Assistant at <a href="https://www.cis.upenn.edu/~cis160/current/">CIS 160</a></li>
+                  </ul>
+                </div>
 
-		<!-- Wrapper -->
-			<div class="wrapper style1">
+                <div class="column">
+                  <h2>Notable Awards</h2>
+                  <ul style="text-align: left">
+                  <li>Kleiner Perkins Fellow (2019)</li>
+                    <li>Eta Kappa Nu (2019)</li>
+                    <li>University of Pennsylvania Dean's List (2019)</li>
+                    <li>University of Pennsylvania Dean's List (2018)</li>
+                    <li>Coca-Cola Scholar (2017)</li>
+                    <li>Joseph Wharton Scholar (2017)</li>
+                  </ul>
+                </div> 
+             </div>
+            <div class="row">
+              <div class="column">
+                <h2>Coursework</h2>
+                   <div class="row">
+                    <div class="column">
+                  <ul style="text-align: left">
+                    <li>Algorithms</li>
+                    <li>Data Structures</li>
+                    <li>Discrete Math</li>
+                    <li>Computer Systems</li>
+                    <li>Linear Algebra</li>
+                    <li>Probability</li>
+                  </ul>
+                       </div>
+                       <div class="column">
+                  <ul style="text-align: left">
+                    <li>Finance</li>
+                    <li>Accounting</li>
+                    <li>Management</li>
+                    <li>Marketing</li>
+                    <li>Scaling Technology Ventures</li> 
+                    <li>Management of Technology</li>
+                  </ul>
+                  </div>
+                  </div>
+                </div>
 
-				<!-- Header -->
-					<div id="header" class="skel-panels-fixed">
-						<div id="logo">
-							<h1><a href="index.html">Dhruv Iyer</a></h1>
-							<span class="tag"></span>
-						</div>
-						<nav id="nav">
-							<ul>
-								<li class="active"><a href="business-side.html">Business</a></li>
-                                <li><a href="contact.html">Contact Me</a></li>
-                                <li><a href="tech-side.html">Engineering</a></li>
-							</ul>
-						</nav>
-					</div>
-
-				<!-- Banner -->
-					<div id="banner" class="container">
-						<section style="margin-bottom: 0px">
-                            <p>Hello! My name is <strong style="color: #990000">Dhruv Iyer</strong>. I'm a second-year student in The Jerome Fisher Program in Management and Technology<a href="http://www.upenn.edu/fisher/" style="color: #011F5B; text-decoration: none;font-size: 0.85em"><sup>[1]</sup></a> at the University of Pennsylvania, where I am currently pursuing dual Bachelor's degrees in Economics<a href="https://www.wharton.upenn.edu/" style="color: #011F5B; text-decoration: none; font-size: 0.85em"><sup>[2]</sup></a> and Computer Science<a href="https://www.seas.upenn.edu/" style="color: #011F5B; text-decoration: none; font-size: 0.85em"><sup>[3]</sup></a>. I'm passionate about Machine Learning, Business Analytics, and Entrepreneurship.</p>
-						</section>
-					</div>
-
-				<!-- Extra -->
-					<div id="extra">
-						<div class="container">
-							<div class="row no-collapse-1">
-                            
-								<section class="4u"> <div id="niceshadow"><a href="business-side.html" class="image featured"><img src="images/eship.png" alt=""></a>
-									<div class="box">
-				                    <a href="business-side.html" class="image featured" style="text-decoration: none; color: #FFF">Business</a>
-                                    </div></div>
-								</section>
-                                <section class="4u">
-
-                                    <div class="boxlike">
-                                        <a href="resume.pdf" id="niceshadow" class="button medium">Résumé</a>
-                                        <a href="contact.html" id="niceshadow" class="buttonblue medium" style=" margin-top: 15px;">Contact</a>
-                                    </div>
-                                </section>
-								<section class="4u"><div id="niceshadow"> <a href="tech-side.html" class="image featured"><img src="images/tech.png" alt=""></a>
-									<div class="box">
-										<a href="tech-side.html" class="image featured" style="text-decoration: none; color: #FFF">Engineering</a>
-                                    </div></div>
-								</section>
-							</div>
-						</div>
-					</div>
-
-	</div>
-
-
-	<!-- Copyright -->
-		<div id="copyright">
-			<div class="container">
-				
-			</div>
-		</div>
-
+                <div class="column">
+                  <h2>Links</h2>
+                <div class="row">
+                    <div class="column" style="width:100%; text-align: center">
+                        
+                    <p><a href="mailto: diyer99@seas.upenn.edu">Email</a></p>
+                    <p><a href="http://www.linkedin.com/dhruviyer">LinkedIn</a></p>
+                    <p><a href="https://twitter.com/iyerdhruv">Twitter</a></p>
+                    <p><a href="resume.pdf">Resume</a></p>
+                    <p><a href="https://ssd.jpl.nasa.gov/sbdb.cgi?sstr=28722;old=0;orb=0;cov=0;log=0;cad=0#top">Planet</a></p>
+                  
+                    </div>
+                    </div>
+                </div> 
+             </div>      
+        </div>
 	</body>
 </html>
